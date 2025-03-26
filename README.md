@@ -45,12 +45,12 @@ mi_proyecto/
 │   └── processed_jobs.json # Almacena los IDs de empleos ya procesados
 ├── requirements.txt      # Dependencias del proyecto
 └── README.md             # Este archivo
-
+```
 ---
 # Requisitos
 
-- <span style="color:#2E86C1;">**Python 3.7+**</span>  
-- **Dependencias** listadas en [requirements.txt](requirements.txt)
+Python 3.7+
+Dependencias listadas en [requirements.txt](requirements.txt)
 
 # Instalación
 
@@ -73,23 +73,23 @@ pip install -r requirements.txt
 # Configuración
 Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
 # Configuración SMTP
-SMTP_SERVER=smtp.gmail.com<br>
+SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587<br>
-SMTP_LOGIN=tu_correo@gmail.com<br>
+SMTP_LOGIN=tu_correo@gmail.com
 SMTP_PASSWORD=tu_contraseña<br>
-SENDER_EMAIL=tu_correo@gmail.com<br>
-RECEIVER_EMAIL=destinatario@gmail.com<br>
-EMAIL_SUBJECT=Oportunidades de Empleo - Nuevas Vacantes<br>
+SENDER_EMAIL=tu_correo@gmail.com
+RECEIVER_EMAIL=destinatario@gmail.com
+EMAIL_SUBJECT=Oportunidades de Empleo - Nuevas Vacantes
 LOGO_PATH=logo.png
 
 # Configuración para la obtención del token (OpenID Connect)
-CLIENT_ID=tu_client_id<br>
-CLIENT_SECRET=tu_client_secret<br>
+CLIENT_ID=tu_client_id
+CLIENT_SECRET=tu_client_secret
 TOKEN_ENDPOINT=https://empleateya.mt.gob.do/idp/connect/token<br>
 
 # Configuración de provincias permitidas (IDs separados por comas)
-ALLOWED_PROVINCIAS=41,190,42<br>
-listado de provincias en -> json/listado_regiones.json
+ALLOWED_PROVINCIAS=41,190,42
+listado de provincias en: "json/listado_regiones.json"
 
 # Archivo de Palabras Clave
 Crea el archivo json/keywords.json con la estructura de palabras clave. Ejemplo:
