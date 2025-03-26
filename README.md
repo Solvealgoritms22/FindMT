@@ -1,5 +1,5 @@
 <!-- Imagen de cabecera (puedes alojarla en tu repo, en la carpeta assets o donde prefieras) -->
-![Encabezado](https://github.com/Solvealgoritms22/FindMT/blob/main/assets/images/trabajo2.png)
+<img src="https://github.com/Solvealgoritms22/FindMT/blob/main/assets/images/trabajo2.png" alt="Encabezado" width="400" padding="10"/>
 
 # FindMT :mag: Aplicación de Empleos – Scraper y Envío de Notificaciones
 
