@@ -39,7 +39,6 @@ mi_proyecto/
 ├── scraper.py            # Consulta la API de empleos y filtra resultados
 ├── email_utils.py        # Genera la plantilla HTML y envía el correo
 ├── main.py               # Flujo principal de scraping y envío de correos
-├── app.py                # Endpoint Flask que obtiene el token y redirige al usuario
 ├── json/
 │   ├── keywords.json     # Palabras clave para filtrar
 │   └── processed_jobs.json # Almacena los IDs de empleos ya procesados
@@ -60,6 +59,7 @@ mi_proyecto/
    
 # Crear y activar un entorno virtual (opcional pero recomendado)
 python -m venv venv
+
 # En Windows:
 venv\Scripts\activate
 
@@ -73,9 +73,9 @@ pip install -r requirements.txt
 Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
 # Configuración SMTP
 SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587<br>
+SMTP_PORT=587
 SMTP_LOGIN=tu_correo@gmail.com
-SMTP_PASSWORD=tu_contraseña<br>
+SMTP_PASSWORD=tu_contraseña
 SENDER_EMAIL=tu_correo@gmail.com
 RECEIVER_EMAIL=destinatario@gmail.com
 EMAIL_SUBJECT=Oportunidades de Empleo - Nuevas Vacantes
@@ -91,7 +91,7 @@ ALLOWED_PROVINCIAS=41,190,42
 listado de provincias en: "json/listado_regiones.json"
 
 # Archivo de Palabras Clave
-Crea el archivo json/keywords.json con la estructura de palabras clave. Ejemplo:
+Archivo ubicado en "json/keywords.json" con la estructura de palabras clave. Ejemplo:
 
 {
      "posiciones": [
