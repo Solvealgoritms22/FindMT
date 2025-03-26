@@ -58,52 +58,52 @@ mi_proyecto/
    cd mi_proyecto
    
 # Crear y activar un entorno virtual (opcional pero recomendado)
-python -m venv venv
+   python -m venv venv
 
 # En Windows:
-venv\Scripts\activate
+   venv\Scripts\activate
 
 # En Linux/Mac:
-source venv/bin/activate
+   source venv/bin/activate
 
 # Instalar las dependencias
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 # Configuración SMTP
-Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
+   Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
 
-SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587
-SMTP_LOGIN=tu_correo@gmail.com
-SMTP_PASSWORD=tu_contraseña
-SENDER_EMAIL=tu_correo@gmail.com
-RECEIVER_EMAIL=destinatario@gmail.com
-EMAIL_SUBJECT=Oportunidades de Empleo - Nuevas Vacantes
-LOGO_PATH=logo.png
+   SMTP_SERVER=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_LOGIN=tu_correo@gmail.com
+   SMTP_PASSWORD=tu_contraseña
+   SENDER_EMAIL=tu_correo@gmail.com
+   RECEIVER_EMAIL=destinatario@gmail.com
+   EMAIL_SUBJECT=Oportunidades de Empleo - Nuevas Vacantes
+   LOGO_PATH=logo.png
 
 # Configuración para la obtención del token (OpenID Connect)
-CLIENT_ID=tu_client_id
-CLIENT_SECRET=tu_client_secret
-TOKEN_ENDPOINT=https://empleateya.mt.gob.do/idp/connect/token<br>
+   CLIENT_ID=tu_client_id
+   CLIENT_SECRET=tu_client_secret
+   TOKEN_ENDPOINT=https://empleateya.mt.gob.do/idp/connect/token<br>
 
 # Configuración de provincias permitidas (IDs separados por comas)
-ALLOWED_PROVINCIAS=41,190,42
-listado de provincias en: "json/listado_regiones.json"
+   ALLOWED_PROVINCIAS=41,190,42
+   listado de provincias en: "json/listado_regiones.json"
 
 # Archivo de Palabras Clave
-Archivo ubicado en "json/keywords.json" con la estructura de palabras clave. Ejemplo:
+   Archivo ubicado en "json/keywords.json" con la estructura de palabras clave. Ejemplo:
 
-{
-     "posiciones": [
-       "gerente de tienda",
-       "encargada de poligono",
-       "encargada administrativa"
-     ],
-     "instituciones": [
-       "franquicias del mundo",
-       "oficina nacional de estadistica",
-       "mercantil c",
-       "enae business school",
-       "universidad del caribe"
-     ],
-}
+   {
+        "posiciones": [
+          "gerente de tienda",
+          "encargada de poligono",
+          "encargada administrativa"
+        ],
+        "instituciones": [
+          "franquicias del mundo",
+          "oficina nacional de estadistica",
+          "mercantil c",
+          "enae business school",
+          "universidad del caribe"
+        ],
+   }
