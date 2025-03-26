@@ -8,7 +8,7 @@
 ## :sparkles: Funcionalidades Principales
 
 - :dart: **Scrapeo de Empleos:** Consulta la API de [MinisterioTrabajo](https://empleateya.mt.gob.do) para extraer puestos de trabajo.
-- :heavy_check_mark: **Filtrado y Deduplificación:** Utiliza palabras clave (definidas en `keywords.json`) y evita empleos duplicados mediante un registro en un archivo `processed_jobs.json`.
+- :heavy_check_mark: **Filtrado y evitar duplicados:** Utiliza palabras clave (definidas en `keywords.json`) y evita empleos duplicados mediante un registro en un archivo `processed_jobs.json`.
 - :email: **Envío de Correos:** Genera y envía un correo HTML con la información de cada puesto y un botón "Aplicar".
 - :cyclone: **Endpoint Intermedio (Proxy):** Implementa un pequeño servidor en Flask que obtiene el token de acceso mediante *client_credentials*, lo inyecta en una cookie y redirige a la página de detalle del puesto.
 
