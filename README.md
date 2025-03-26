@@ -3,7 +3,7 @@
 
 # FindMT :mag: Aplicación de Empleos – Scraper y Envío de Notificaciones
 
-<span style="color:#2E86C1"><strong>FindMT</strong></span> es una aplicación que te ayuda a localizar oportunidades de trabajo de forma automatizada, filtrarlas y recibir notificaciones por correo electrónico. A continuación, te presentamos sus principales funcionalidades:
+<span style="color:#2E86C1"><strong>FindMT</strong></span> es una aplicación que te ayuda a localizar oportunidades de trabajo de forma automatizada de acuerdo a tu perfil, filtrarlas y recibir notificaciones por correo electrónico. A continuación, te presentamos sus principales funcionalidades:
 
 ## :sparkles: Funcionalidades Principales
 
