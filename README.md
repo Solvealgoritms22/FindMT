@@ -43,7 +43,7 @@ FindMT/
 │   ├── keywords.json     # Palabras clave para filtrar
 │   └── processed_jobs.json # Almacena los IDs de empleos ya procesados
 ├── requirements.txt      # Dependencias del proyecto
-└── README.md             # Este archivo
+└── README.md             # Documentacion
 ```
 ---
 ## :hammer_and_wrench: Requisitos
