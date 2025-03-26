@@ -1,50 +1,76 @@
-# FindMT Aplicación de Empleos – Scraper y Envío de Notificaciones
+<!-- Imagen de cabecera (puedes alojarla en tu repo, en la carpeta assets o donde prefieras) -->
+![Encabezado](ruta_a_tu_imagen_de_cabecera.png)
 
-Esta aplicación realiza lo siguiente:
+# FindMT :mag: Aplicación de Empleos – Scraper y Envío de Notificaciones
 
-- **Scrapeo de Empleos:** Consulta la API de [MinisterioTrabajo](https://empleateya.mt.gob.do) para extraer puestos de trabajo.
-- **Filtrado y Deduplificación:** Filtra los empleos según palabras clave configuradas y evita enviar empleos duplicados mediante un registro en un archivo JSON.
-- **Envío de Correos:** Genera y envía un correo electrónico con una plantilla HTML (compatible con Outlook y otros clientes) que incluye la información de cada empleo y un botón "Aplicar".
-- **Endpoint Intermedio (Proxy):** Proporciona un endpoint intermedio (desarrollado con Flask) que obtiene un token de acceso mediante el flujo *client_credentials*, lo inyecta en una cookie y redirige a la página de detalle del puesto.
+<span style="color:#2E86C1"><strong>FindMT</strong></span> es una aplicación que te ayuda a localizar oportunidades de trabajo de forma automatizada, filtrarlas y recibir notificaciones por correo electrónico. A continuación, te presentamos sus principales funcionalidades:
 
-## Características
+## :sparkles: Funcionalidades Principales
 
-- **Configuración a través de .env:** Toda la configuración (datos SMTP, credenciales, endpoints, etc.) se carga desde un archivo `.env`.
-- **Modularidad:** La aplicación está dividida en módulos:
-  - **config.py:** Carga y expone las variables de entorno.
-  - **scraper.py:** Contiene la clase `MinisterioTrabajo` para extraer y filtrar empleos, y funciones para el manejo de IDs procesados.
-  - **email_utils.py:** Genera la plantilla HTML del correo y define la función para el envío.
-  - **main.py:** Orquesta el flujo: scrapeo, filtrado, actualización de IDs, generación del correo y envío.
-- **Registro (Logging):** Se genera un archivo de log (`app.log`) con información de la ejecución, errores y detalles del envío.
+- :dart: **Scrapeo de Empleos:** Consulta la API de [MinisterioTrabajo](https://empleateya.mt.gob.do) para extraer puestos de trabajo.
+- :heavy_check_mark: **Filtrado y Deduplificación:** Utiliza palabras clave (definidas en `keywords.json`) y evita empleos duplicados mediante un registro en un archivo `processed_jobs.json`.
+- :email: **Envío de Correos:** Genera y envía un correo HTML con la información de cada puesto y un botón "Aplicar".
+- :cyclone: **Endpoint Intermedio (Proxy):** Implementa un pequeño servidor en Flask que obtiene el token de acceso mediante *client_credentials*, lo inyecta en una cookie y redirige a la página de detalle del puesto.
 
-## Estructura del Proyecto
-mi_proyecto/ <br>├── .env # Variables de entorno (configuración SMTP, credenciales, endpoints, etc.) <br>├── config.py # Carga las variables de entorno y las expone a la aplicación. <br>├── scraper.py # Lógica para consultar la API de empleos y filtrar resultados. <br>├── email_utils.py # Funciones para generar la plantilla HTML y enviar el correo. <br>├── main.py # Punto de entrada para ejecutar el proceso de scraping y envío de correos. <br>├── app.py # Endpoint intermedio (Flask) que obtiene el token y redirige al usuario. <br>├── json/ │ <br>├── keywords.json # Archivo JSON con las palabras clave de filtrado. │ <br>└── processed_jobs.json # Archivo JSON que almacena los IDs de empleos ya procesados. <br>├── requirements.txt # Lista de dependencias del proyecto. <br>└── README.md # Este archivo.
+---
 
+## :clipboard: Características
 
-## Requisitos
+1. <span style="color:green">**Configuración a través de `.env`**</span>  
+   Toda la configuración (datos SMTP, credenciales, endpoints, etc.) se carga desde un archivo `.env`.
 
-- **Python 3.7+**
-- Dependencias listadas en [requirements.txt](requirements.txt)
+2. <span style="color:green">**Modularidad**</span>  
+   - `config.py`: Carga y expone variables de entorno.  
+   - `scraper.py`: Clase `MinisterioTrabajo` para extraer y filtrar empleos, y funciones para manejo de IDs procesados.  
+   - `email_utils.py`: Generación de la plantilla HTML y función de envío.  
+   - `main.py`: Orquesta el flujo principal (scrapeo, filtrado, actualización de IDs y envío de correo).
 
-## Instalación
+3. <span style="color:green">**Registro (Logging)**</span>  
+   Se crea un archivo `app.log` con la bitácora de la ejecución, errores y detalles del envío.
 
-1. **Clonar el repositorio:**
+---
 
+## :file_folder: Estructura del Proyecto
+
+```bash
+mi_proyecto/
+├── .env                  # Variables de entorno (SMTP, credenciales, endpoints, etc.)
+├── config.py             # Carga las variables de entorno y las expone
+├── scraper.py            # Consulta la API de empleos y filtra resultados
+├── email_utils.py        # Genera la plantilla HTML y envía el correo
+├── main.py               # Flujo principal de scraping y envío de correos
+├── app.py                # Endpoint Flask que obtiene el token y redirige al usuario
+├── json/
+│   ├── keywords.json     # Palabras clave para filtrar
+│   └── processed_jobs.json # Almacena los IDs de empleos ya procesados
+├── requirements.txt      # Dependencias del proyecto
+└── README.md             # Este archivo
+
+---
+# Requisitos
+
+- <span style="color:#2E86C1;">**Python 3.7+**</span>  
+- **Dependencias** listadas en [requirements.txt](requirements.txt)
+
+# Instalación
+
+# Clonar el repositorio 
    ```bash
    git clone https://tu-repositorio.git
    cd mi_proyecto
    
-2. **Crear y activar un entorno virtual (opcional pero recomendado):**
+# Crear y activar un entorno virtual (opcional pero recomendado)
 python -m venv venv
 # En Windows:
 venv\Scripts\activate
+
 # En Linux/Mac:
 source venv/bin/activate
 
-3. **Instalar las dependencias:**
+# Instalar las dependencias
 pip install -r requirements.txt
 
-4. **Configuración**
+# Configuración
 Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
 # Configuración SMTP
 SMTP_SERVER=smtp.gmail.com<br>
@@ -65,20 +91,20 @@ TOKEN_ENDPOINT=https://empleateya.mt.gob.do/idp/connect/token<br>
 ALLOWED_PROVINCIAS=41,190,42<br>
 listado de provincias en -> json/listado_regiones.json
 
-5. **Archivo de Palabras Clave**
+# Archivo de Palabras Clave
 Crea el archivo json/keywords.json con la estructura de palabras clave. Ejemplo:
 
-{<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;"posiciones": [<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"gerente de tienda",<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"encargada de poligono",<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"encargada administrativa"<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;],<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;"instituciones": [<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"franquicias del mundo",<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"oficina nacional de estadistica",<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"mercantil c",<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"enae business school",<br>
-       &nbsp;&nbsp;&nbsp;&nbsp;"universidad del caribe"<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;],<br>
+{
+     "posiciones": [
+       "gerente de tienda",
+       "encargada de poligono",
+       "encargada administrativa"
+     ],
+     "instituciones": [
+       "franquicias del mundo",
+       "oficina nacional de estadistica",
+       "mercantil c",
+       "enae business school",
+       "universidad del caribe"
+     ],
 }
