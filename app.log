@@ -1,0 +1,65 @@
+
+
+2025-03-26 10:54:53,882 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 10:55:34,888 - INFO - Token obtenido exitosamente.
+2025-03-26 10:55:37,505 - INFO - Correo enviado exitosamente con 2 nuevos empleos.
+2025-03-26 10:55:37,505 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 11:07:12,588 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 11:08:03,864 - INFO - No se encontraron nuevos empleos para enviar.
+2025-03-26 11:08:03,864 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 11:08:29,017 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 11:09:20,296 - ERROR - Error al solicitar el token: 400 Client Error: Bad Request for url: https://empleateya.mt.gob.do/cms/identity-server/connect/token
+2025-03-26 11:09:22,161 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 11:09:22,161 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 12:00:53,504 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 12:01:39,014 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 12:01:39,015 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 12:07:09,327 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 12:07:48,132 - INFO - No se encontraron nuevos empleos para enviar.
+2025-03-26 12:07:48,132 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 12:08:06,963 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 12:08:48,196 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 12:08:48,197 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 13:17:12,313 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 13:17:51,053 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 13:17:51,053 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 13:25:53,015 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 13:26:32,568 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 13:26:32,568 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 13:30:24,006 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 13:31:11,305 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 13:31:11,306 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+
+2025-03-26 13:36:21,526 - INFO - Inicio de la ejecucion del programa.
+2025-03-26 13:37:01,822 - INFO - Token obtenido exitosamente.
+2025-03-26 13:37:05,505 - INFO - Correo enviado exitosamente con 3 nuevos empleos.
+2025-03-26 13:37:05,506 - INFO - Fin de la ejecucion del programa.
+--------------------------------------------------
+
+

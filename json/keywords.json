@@ -1,0 +1,81 @@
+{
+    "posiciones": [
+        "gerente de tienda",
+        "encargada de tienda",
+        "encargada de poligono",
+        "encargada administrativa"
+    ],
+    "instituciones": [
+        "franquicias del mundo",
+        "oficina nacional de estadistica",
+        "mercantil c",
+        "mercantil",
+        "enae business school",
+        "universidad del caribe"
+    ],
+    "responsabilidades": [
+        "liderazgo de equipos",
+        "cumplimiento de objetivos de venta",
+        "objetivos de venta",
+        "gestion efectiva de inventario",
+        "control de costos",
+        "resolver conflictos",
+        "atencion al cliente de calidad",
+        "orientado a resultados",
+        "ventas minoristas",
+        "capacitar",
+        "evaluar",
+        "seleccionar candidatos",
+        "asignar",
+        "realizar recorrido del area de trabajo",
+        "dirigir",
+        "supervisar",
+        "coordinar actividades diarias",
+        "asegurar coberturas en levantamiento",
+        "coordinacion de actividades administrativas",
+        "gestion de documentos",
+        "supervision de personal",
+        "cumplimiento de objetivos",
+        "gestion eficiente de recursos",
+        "elaboracion de informes financieros",
+        "informes financieros",
+        "elaboracion de informes operativos",
+        "informes operativos"
+    ],
+    "educacion": [
+        "master en direccion y gestion de comercio internacional",
+        "comercio internacional",
+        "lic. mercadeo",
+        "licenciada en mercadeo",
+        "mercadeo"
+    ],
+    "objetivo profesional": [
+        "servicio directo con el cliente",
+        "servicio al cliente",
+        "gestion de personal",
+        "ventas",
+        "compras",
+        "inventarios",
+        "costos",
+        "negociacion",
+        "importacion",
+        "preparacion de reportes fiscales",
+        "reportes fiscales",
+        "gestion administrativa"
+    ],
+    "habilidades": [
+        "microsoft office",
+        "gestion de documentos",
+        "atencion al cliente",
+        "pensamiento analitico"
+    ],
+    "certificaciones y cursos": [
+        "estrategia de compras y negociaciones efectivas",
+        "estrategia de compras",
+        "negociaciones efectivas",
+        "diplomado en seguridad social",
+        "seguridad social",
+        "diplomado en alta gerencia",
+        "alta gerencia"
+    ]
+}
