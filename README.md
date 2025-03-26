@@ -107,3 +107,19 @@ FindMT/
           "universidad del caribe"
         ],
    }
+```
+---
+## :alarm_clock: Automatización de Tareas en Windows
+   Si deseas que el proceso de **scraping** y envío de correos se ejecute de manera periódica (por ejemplo, a diario), puedes programar una tarea en **Windows Task Scheduler** siguiendo estos pasos:
+
+   1. **Crear un archivo .bat** (o .cmd)  
+      En el directorio de tu proyecto (o donde desees) crea un archivo, por ejemplo `run_scraper.bat`, con el siguiente contenido:
+
+      ```bat
+      @echo off
+      REM Cambia la siguiente ruta por la ubicación real de tu proyecto
+      cd /d "C:\ruta\de\tu\proyecto"
+      REM Activa el entorno virtual (si usas virtualenv)
+      call venv\Scripts\activate
+      REM Ejecuta el script principal
+      python main.py
