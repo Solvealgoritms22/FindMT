@@ -84,7 +84,7 @@ FindMT/
 # Configuración para la obtención del token (OpenID Connect)
    CLIENT_ID=tu_client_id
    CLIENT_SECRET=tu_client_secret
-   TOKEN_ENDPOINT=https://empleateya.mt.gob.do/idp/connect/token<br>
+   TOKEN_ENDPOINT=https://empleateya.mt.gob.do/idp/connect/token
 
 # Configuración de provincias permitidas (IDs separados por comas)
    ALLOWED_PROVINCIAS=41,190,42
