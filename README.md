@@ -54,7 +54,7 @@ mi_proyecto/
 
 ## :rocket: Instalación
 ```bash
-# Clonar el repositorio y configurar
+# Clonar el repositorio
    git clone https://tu-repositorio.git
    cd mi_proyecto
    
