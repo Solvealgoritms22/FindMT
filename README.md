@@ -69,9 +69,9 @@ source venv/bin/activate
 # Instalar las dependencias
 pip install -r requirements.txt
 
-# Configuración
-Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
 # Configuración SMTP
+Crea un archivo .env en el directorio raíz con las siguientes variables (ajusta los valores según tu entorno):
+
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
 SMTP_LOGIN=tu_correo@gmail.com
