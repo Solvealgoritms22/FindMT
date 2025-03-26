@@ -33,7 +33,7 @@
 ## :file_folder: Estructura del Proyecto
 
 ```bash
-mi_proyecto/
+FindMT/
 ├── .env                  # Variables de entorno (SMTP, credenciales, endpoints, etc.)
 ├── config.py             # Carga las variables de entorno y las expone
 ├── scraper.py            # Consulta la API de empleos y filtra resultados
