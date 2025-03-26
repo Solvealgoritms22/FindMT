@@ -14,7 +14,7 @@ def generate_email_template(jobs, token=None):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oportunidades de Empleo</title>
+  <title>FindMT</title>
 </head>
 <body style="margin:0; padding:0; background-color:#f4f4f4;">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -79,12 +79,12 @@ def generate_email_template(jobs, token=None):
         """
     email_html += """
               <p>Saludos cordiales,</p>
-              <p><strong>Equipo de ConectaEmpleo</strong></p>
+              <p><strong>Equipo de FindMT</strong></p>
             </td>
           </tr>
           <tr>
             <td bgcolor="#336699" style="padding: 30px; font-family: Arial, sans-serif; font-size: 14px; color: #ffffff;">
-              <p style="margin: 0;">© 2025 ConectaEmpleo. Todos los derechos reservados.</p>
+              <p style="margin: 0;">© 2025 FindMT. Todos los derechos reservados.</p>
             </td>
           </tr>
         </table>
