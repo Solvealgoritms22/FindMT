@@ -55,7 +55,7 @@ mi_proyecto/
 ## :rocket: Instalación
 ```bash
 # Clonar el repositorio
-   [git clone https://tu-repositorio.git](https://github.com/Solvealgoritms22/FindMT.git)
+   git clone https://github.com/Solvealgoritms22/FindMT.git
    cd mi_proyecto
    
 # Crear y activar un entorno virtual (opcional pero recomendado)
