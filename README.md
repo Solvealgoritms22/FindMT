@@ -47,15 +47,14 @@ mi_proyecto/
 └── README.md             # Este archivo
 ```
 ---
-# Requisitos
+## :hammer_and_wrench: Requisitos
 
-Python 3.7+
-Dependencias listadas en [requirements.txt](requirements.txt)
+- <span style="color:#2E86C1;">**Python 3.7+**</span>  
+- **Dependencias** listadas en [requirements.txt](requirements.txt)
 
-# Instalación
-
-# Clonar el repositorio 
-   ```bash
+## :rocket: Instalación
+```bash
+# Clonar el repositorio y configurar
    git clone https://tu-repositorio.git
    cd mi_proyecto
    
