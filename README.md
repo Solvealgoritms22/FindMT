@@ -5,7 +5,7 @@ Esta aplicación realiza lo siguiente:
 - **Scrapeo de Empleos:** Consulta la API de [MinisterioTrabajo](https://empleateya.mt.gob.do) para extraer puestos de trabajo.
 - **Filtrado y Deduplificación:** Filtra los empleos según palabras clave configuradas y evita enviar empleos duplicados mediante un registro en un archivo JSON.
 - **Envío de Correos:** Genera y envía un correo electrónico con una plantilla HTML (compatible con Outlook y otros clientes) que incluye la información de cada empleo y un botón "Aplicar".
-- **Endpoint Intermedio (Proxy):** Proporciona un endpoint intermedio (desarrollado con Flask) que obtiene un token de acceso mediante el flujo *client_credentials*, lo inyecta en una cookie y redirige al usuario primero al dashboard y luego a la página de detalle del puesto.
+- **Endpoint Intermedio (Proxy):** Proporciona un endpoint intermedio (desarrollado con Flask) que obtiene un token de acceso mediante el flujo *client_credentials*, lo inyecta en una cookie y redirige a la página de detalle del puesto.
 
 ## Características
 
@@ -69,16 +69,16 @@ listado de provincias en -> json/listado_regiones.json
 Crea el archivo json/keywords.json con la estructura de palabras clave. Ejemplo:
 
 {<br>
-     "posiciones": [<br>
-       "gerente de tienda",<br>
-       "encargada de poligono",<br>
-       "encargada administrativa"<br>
-     ],<br>
-     "instituciones": [<br>
-       "franquicias del mundo",<br>
-       "oficina nacional de estadistica",<br>
-       "mercantil c",<br>
-       "enae business school",<br>
-       "universidad del caribe"<br>
-     ],<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"posiciones": [<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"gerente de tienda",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"encargada de poligono",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"encargada administrativa"<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;],<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"instituciones": [<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"franquicias del mundo",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"oficina nacional de estadistica",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"mercantil c",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"enae business school",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;"universidad del caribe"<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;],<br>
 }
