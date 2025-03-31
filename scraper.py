@@ -60,7 +60,7 @@ class MinisterioTrabajo:
         """
         all_jobs = []
         page_index = 1
-        page_size = 6
+        page_size = 400
         
         allowed_provincias = ALLOWED_PROVINCIAS
         current_date = datetime.now()
